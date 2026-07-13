@@ -1,5 +1,7 @@
 # auto-env-doctor
 
+![Terminal Demo](./demo.gif)
+
 > **Environment Variable Auditing Tool:** A zero-dependency static analysis tool that scans your codebase for `process.env` references and automatically synchronizes them with your `.env.example` file.
 
 ---

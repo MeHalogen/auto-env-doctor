@@ -1,0 +1,41 @@
+{
+  "name": "auto-env-doctor",
+  "version": "1.0.0",
+  "description": "Zero-dependency static scanner to verify and synchronize process.env references with .env.example templates.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "auto-env-doctor": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "dotenv",
+    "process.env",
+    "doctor",
+    "scanner",
+    "sync",
+    "env",
+    "vibe-coding"
+  ],
+  "author": "Antigravity Factory Manager",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
